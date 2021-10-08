@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="main">
+        <input class="main__text" type="text"  placeholder="Название" list="prod" spellcheck="false">
+        <button class="main__remove">&#8656;</button>
+        <datalist id="prod">
+            <option value="мб/облепиховый чай с имбирем">
+            <option value="мб/вечерний чай/клюквенный">
+            <option value="мб/имунный сбор">
+            <option value="мб/согревающий чай">
+            <option value="мб/чай черный с облепихой"></option>
+            </datalist>
+        <input class="main__amount" type="text"  placeholder="Количество">
+        <button class="main__add">Добавить</button>
+        <ul class="main__out">
+
+        </ul>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>

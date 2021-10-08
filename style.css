@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Обёртка */
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(16, 112, 112);
+}
+
+/* Инпуты */
+
+.main__text {
+    display: inline;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    margin-top: 30px;
+    outline: none;
+    font-size: 15px;
+}
+
+.main__amount {
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    outline: none;
+    font-size: 15px;
+    margin-top: -36px;
+}
+
+/* Плейсхолдеры */
+
+input::-webkit-input-placeholder {
+    color: rgb(77, 186, 135);
+    opacity: 50%;
+    font-size: 26px;
+    font-weight: 500;
+    transform: translateY(4px);
+} 
+
+.main__text::-webkit-input-placeholder {
+    padding-left: 40px; 
+}
+
+.main__amount::-webkit-input-placeholder {
+    padding-left: 25px; 
+}
+
+/* Даталист */
+
+input::-webkit-calendar-picker-indicator {
+    color: rgb(0, 0, 0, .0);
+}
+
+/* Кнопки */
+
+.main__add {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    width: 200px;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 36px;
+    text-decoration: none;
+    color: rgb(77, 186, 135);
+    transition: .1s linear;
+    cursor: pointer;
+}
+
+.main__remove {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    width: 50px;
+    height: 40px;
+    font-size: 26px;
+    text-decoration: none;
+    color: rgb(204, 4, 4);
+    transition: .1s linear;
+    cursor: pointer;
+    margin-top: 30px;
+    transform: translateY(-70px) translateX(130px)
+}
+
+.main__remove--active {
+    display: block;
+}
+
+/* Место рендера */
+
+.main__out {
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    overflow: hidden;
+}
