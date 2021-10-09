@@ -83,12 +83,12 @@ let drinks = [
 
 // получение данных из инпутов 
 function addData(callback1, callback2) {
-textElem.addEventListener('input', (event) => {
+textElem.addEventListener('change', (event) => {
     textValue = event.target.value
     callback1(textValue)
 })
 
-amountElem.addEventListener('input', (event) => {
+amountElem.addEventListener('change', (event) => {
     amountValue = event.target.value
     callback2(amountValue)
 })
