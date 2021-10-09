@@ -129,7 +129,7 @@ addBtn.addEventListener('click', () => {
     }
     mainOut.innerHTML = ''
     allProducts.filter(e => e.value !== 0).forEach(e => {
-        mainOut.insertAdjacentHTML('afterbegin', `<li>${e.name}: ${e.value.toFixed(3)}</li>`)
+        mainOut.insertAdjacentHTML('afterbegin', `<li>${e.name}: ${e.value}</li>`)
         
     })
 })
